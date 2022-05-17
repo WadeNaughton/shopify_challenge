@@ -1,0 +1,10 @@
+<h1>Items</h1>
+
+<% @items.each do |item| %>
+  <p>Name: <%= item.name %></p>
+  <p>Price: <%= item.price %></p>
+            <%= link_to "Edit", "/items/#{item.id}/edit"%>
+            <%= link_to "Delete", "/items/#{item.id}", method: :delete%>
+<% end %>
+
+<p><%= link_to "Create New Item", "/items/new"%></p>
