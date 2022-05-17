@@ -1,0 +1,8 @@
+<h1>Warehouses</h1>
+
+<% @warehouses.each do |warehouse| %>
+  <p>Name: <%= warehouse.name %></p>
+            <%= link_to "View Warehouse", "/warehouses/#{warehouse.id}" %>
+<% end %>
+
+<p><%= link_to "Create Warehouse", "/warehouses/new" %></p>
