@@ -22,6 +22,13 @@ class WarehousesController < ApplicationController
     end
   end
 
+  def destroy
+    item = Warehouse.find(params[:id])
+    item.destroy
+    redirect_to "/warehouses"
+
+  end
+
   private
     def warehouse_params
       params.permit(:name)

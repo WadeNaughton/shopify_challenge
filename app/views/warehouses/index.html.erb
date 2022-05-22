@@ -1,8 +1,12 @@
+<p><%= link_to "Items", "/items"%></p>
+
 <h1>Warehouses</h1>
 
 <% @warehouses.each do |warehouse| %>
   <p>Name: <%= warehouse.name %></p>
-            <%= link_to "View Warehouse", "/warehouses/#{warehouse.id}" %>
+            <%= link_to "View Warehouse", "/warehouses/#{warehouse.id}" %> <%= "|" %>
+            <%= link_to "Delete", "/warehouses/#{warehouse.id}", method: :delete%>
+
 <% end %>
 
 <p><%= link_to "Create Warehouse", "/warehouses/new" %></p>
