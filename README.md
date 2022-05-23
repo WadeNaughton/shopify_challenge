@@ -21,6 +21,14 @@ https://lit-ocean-15760.herokuapp.com/
 - Run bundle
 
   `bundle install `
+  
+- Create the database
+
+    `rails db:create`
+    
+- Migrate 
+
+    `rails db:migrate`
 
 - Run rails and go to localhost http://localhost:3000/
 
