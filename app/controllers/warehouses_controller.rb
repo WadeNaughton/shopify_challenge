@@ -31,6 +31,6 @@ class WarehousesController < ApplicationController
 
   private
     def warehouse_params
-      params.permit(:name)
+      params.permit(:name, :state)
     end
 end
