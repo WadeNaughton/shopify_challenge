@@ -14,7 +14,7 @@ class WarehousesController < ApplicationController
   end
 
   def create
-    warehouse = Warehouse.create!(warehouse_params)
+    warehouse = Warehouse.new(warehouse_params)
     if warehouse.save
       redirect_to "/warehouses"
     else

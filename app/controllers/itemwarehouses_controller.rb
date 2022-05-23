@@ -1,6 +1,5 @@
 class ItemwarehousesController < ApplicationController
 
-
   def create
     item = Item.find(params[:id])
     warehouse = Warehouse.find_by(id: params[:warehouse_id])
