@@ -1,24 +1,27 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Link To Deployment
 
-Things you may want to cover:
+https://lit-ocean-15760.herokuapp.com/
 
-* Ruby version
+# Steps to run localy 
 
-* System dependencies
+- Clone this repo
 
-* Configuration
+  ` git clone git@github.com:WadeNaughton/shopify_challenge.git`
+ 
+- CD into the repository
 
-* Database creation
+  ` cd shopify_challenge.git`
 
-* Database initialization
+- Open the repository
 
-* How to run the test suite
+  -Ex: `atom shopify_challenge.git`
+  
+- Run bundle
 
-* Services (job queues, cache servers, search engines, etc.)
+  `bundle install `
 
-* Deployment instructions
+- Run rails and go to localhost http://localhost:3000/
 
-* ...
+  `rails s `
